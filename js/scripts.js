@@ -54,6 +54,14 @@ $(document).ready(function () {
         $('body').removeClass('no-scrolling');
     }
 
+    function closeTooltip() {
+        $('.js-close-tooltip').on('click', function (e) {
+            e.preventDefault();
+            $('.tooltip').fadeOut();
+        });
+    }
+    closeTooltip();
+
     $('.table-wrapper').scrollbar();
     $('.faq-wrap').scrollbar();
 

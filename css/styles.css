@@ -630,6 +630,33 @@ header {
     background-size: contain;
 }
 
+.tooltip {
+    position: fixed;
+    top: 200px;
+    right: 0;
+    width: 300px;
+    height: 196px;
+    padding: 26px;
+    text-align: center;
+    background: url(../img/tooltip-bg.svg) center no-repeat;
+    background-size: contain;
+    z-index: 3;
+}
+
+.tooltip img {
+    width: 134px;
+    margin: auto;
+}
+
+.tooltip-text {
+    font-size: 19px;
+    line-height: 111%;
+    text-align: center;
+    color: #004F91;
+    text-shadow: 4px 0px 0px #fff;
+    margin-bottom: 5px;
+}
+
 .main-block {
     min-height: 550px;
 }
@@ -1326,7 +1353,8 @@ footer {
     vertical-align: middle;
 }
 
-.close-popup {
+.close-popup,
+.close-tooltip {
     position: absolute;
     top: 15px;
     right: 20px;
@@ -1335,21 +1363,26 @@ footer {
     align-items: center;
 }
 
-.close-popup span {
+.close-popup span,
+.close-tooltip span {
     margin-right: 5px;
     transition: all .2s linear;
 }
 
 .close-popup svg,
-.close-popup svg path {
+.close-popup svg path,
+.close-tooltip svg,
+.close-tooltip svg path {
     transition: all .2s linear;
 }
 
-.close-popup:hover svg path {
+.close-popup:hover svg path,
+.close-tooltip:hover svg path {
     stroke: #27C2EE;
 }
 
-.close-popup:hover span {
+.close-popup:hover span,
+.close-tooltip:hover span {
     color: #27C2EE;
 }
 
@@ -2221,6 +2254,13 @@ table td {
 	    height: 32px;
 	    background: url(../img/logout-icon-mob.svg) center no-repeat;
 	    background-size: contain;
+    }
+
+    .tooltip {
+        top: 240px;
+        height: 226px;
+        background: url(../img/tooltip-bg-mob.svg) center no-repeat;
+        background-size: contain;
     }
 
     .main-block {
