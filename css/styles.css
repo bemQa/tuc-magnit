@@ -1766,7 +1766,7 @@ table td {
 
 .lk-table {
 	height: 230px;
-    max-width: 600px;
+    max-width: 770px;
     margin: 36px auto 58px;
 }
 
@@ -1793,6 +1793,12 @@ table td {
 
 .win-prize-column {
 	width: 135px;
+}
+
+.get-prize {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .win-prize-column img {
@@ -2508,14 +2514,18 @@ table td {
     	padding-left: 15px;
     }
 
+    .lk-table th {
+        font-size: 12px;
+    }
+
     .check-column {
     	display: flex;
-	    align-items: center;
-	    font-size: 18px;
+        flex-direction: column;
+	    font-size: 16px;
     }
 
     .check-preview {
-    	margin-right: 10px;
+    	margin-bottom: 10px;
     }
 
     .win-prize-column {
@@ -2525,7 +2535,22 @@ table td {
     .win-prize-column a {
     	font-size: 16px;
     	max-width: 66px;
-    	margin-left: 5px;
+    	margin-left: 0;
+    }
+
+    .get-prize {
+        display: flex;
+        flex-direction: column;
+        -ms-align-items: flex-start;
+        align-items: flex-start;
+    }
+
+    .get-prize-icon {
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        height: 50px;
+        margin-bottom: 10px;
     }
 
     .faq-block {
@@ -2632,4 +2657,8 @@ table td {
 	.cookie-text-ul li {
 	    margin: 15px 0;
 	}
+
+    .win-prize-column {
+        width: 100px;
+    }
 }
